@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ray's Portfolio — 3D Gallery</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="sparkle-container"></div>
+
+  <nav class="navbar">
+    <div class="nav-content">
+      <div class="nav-logo"><span class="logo-text">✦ Ray's Portfolio ✦</span></div>
+      <ul class="nav-links">
+        <li><a class="nav-link" href="index.html">Home</a></li>
+        <li><a class="nav-link" href="commissions.html">Commissions</a></li>
+        <li><a class="nav-link" href="gallery-2d.html">2D Gallery</a></li>
+        <li><a class="nav-link active" href="gallery-3d.html">3D Gallery</a></li>
+        <li><a class="nav-link" href="links.html">Links</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container">
+    <section class="page active" id="gallery-3d">
+      <div class="page-header">
+        <h1>3D Gallery 🖼️</h1>
+        <div class="decorative-line"></div>
+      </div>
+
+      <div class="content-box">
+        <p class="gallery-intro">My 3D modeling work in Blender - click to enlarge!</p>
+
+        <div class="gallery-grid">
+          <div class="gallery-item" data-image="https://i.pinimg.com/originals/89/a3/19/89a31936a34ddaa758741f44de2a9779.png">
+            <img src="https://i.pinimg.com/originals/89/a3/19/89a31936a34ddaa758741f44de2a9779.png" alt="3D Artwork 1"/>
+            <div class="gallery-overlay"><span>View</span></div>
+          </div>
+
+          <div class="gallery-item" data-image="https://i.imgur.com/XiRC0x6.png"><img src="https://i.imgur.com/XiRC0x6.png" alt="3D Artwork 2"/><div class="gallery-overlay"><span>View</span></div></div>
+          <div class="gallery-item" data-image="https://i.imgur.com/VgvvIwR.png"><img src="https://i.imgur.com/VgvvIwR.png" alt="3D Artwork 3"/><div class="gallery-overlay"><span>View</span></div></div>
+          <div class="gallery-item" data-image="https://i.imgur.com/3G1Hpao.gif"><img src="https://i.imgur.com/3G1Hpao.gif" alt="3D Artwork 4"/><div class="gallery-overlay"><span>View</span></div></div>
+          <div class="gallery-item" data-image="https://i.imgur.com/hJ90bgy.gif"><img src="https://i.imgur.com/hJ90bgy.gif" alt="3D Artwork 5"/><div class="gallery-overlay"><span>View</span></div></div>
+          <div class="gallery-item" data-image="https://i.imgur.com/IPe4bcM.gif"><img src="https://i.imgur.com/IPe4bcM.gif" alt="3D Artwork 6"/><div class="gallery-overlay"><span>View</span></div></div>
+          <div class="gallery-item" data-image="https://i.imgur.com/J0c5aDz.gif"><img src="https://i.imgur.com/J0c5aDz.gif" alt="3D Artwork 7"/><div class="gallery-overlay"><span>View</span></div></div>
+          <div class="gallery-item" data-image="https://i.imgur.com/z5vV8IO.gif"><img src="https://i.imgur.com/z5vV8IO.gif" alt="3D Artwork 8"/><div class="gallery-overlay"><span>View</span></div></div>
+          <div class="gallery-item" data-image="https://i.imgur.com/U0MAues.png"><img src="https://i.imgur.com/U0MAues.png" alt="3D Artwork 9"/><div class="gallery-overlay"><span>View</span></div></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <div class="lightbox-content">
+      <span class="lightbox-close">×</span>
+      <img id="lightbox-image" alt="Enlarged image" src=""/>
+      <div class="lightbox-nav">
+        <button class="lightbox-prev">← Prev</button>
+        <button class="lightbox-next">Next →</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
