@@ -238,6 +238,7 @@ body::before{
 
 .link-button.kofi{ background: linear-gradient(135deg, #d34d4d 0%, #e37a7a 100%); border-color:#c13c3c; color:#fff }
 .link-button.bandcamp{ background: linear-gradient(135deg, #178aa6 0%, #4fb6cf 100%); border-color:#147c95; color:#fff }
+.link-button.patreon{ background: linear-gradient(135deg, #e7ce29 0%, #e5d970 100%); border-color:#ccac1d; color:#fff }
 .link-button.commissions{ background: linear-gradient(135deg, var(--primary-purple) 0%, var(--primary-pink) 100%); border-color:var(--border-purple); color:#fff }
 .link-button.placeholder{ background: linear-gradient(135deg, var(--bg-light-pink) 0%, #ffffff 100%); border-color:var(--primary-pink); border-style:dashed; color:var(--text-purple); cursor:default }
 .link-button.placeholder:hover{ transform:none }
