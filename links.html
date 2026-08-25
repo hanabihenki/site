@@ -1,169 +1,150 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Ray's Portfolio — Links</title>
-  <link rel="stylesheet" href="style.css"/>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ray's Portfolio — Links</title>
+<meta name="description" content="Find Ray / Hanabihenki around the web.">
 
-  <!-- Font Awesome 6 Free/Brands — primary CDN -->
-  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
-  <link id="fa-cdn" rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-        crossorigin="anonymous" referrerpolicy="no-referrer">
+<link rel="stylesheet" href="css/style.css">
 
-  <!-- Auto-fallback to jsDelivr if the first CDN is blocked or fails -->
-  <script>
-    (function () {
-      // After a short delay, verify FA applied; if not, load a fallback CSS.
-      function ensureFA() {
-        const test = document.createElement('i');
-        test.className = 'fa-solid fa-star';
-        test.style.position = 'absolute';
-        test.style.opacity = '0';
-        document.body.appendChild(test);
-        const fam = getComputedStyle(test).fontFamily || '';
-        const ok = /Font Awesome/i.test(fam);
-        test.remove();
-        if (!ok) {
-          var alt = document.createElement('link');
-          alt.rel = 'stylesheet';
-          alt.href = 'https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css';
-          alt.crossOrigin = 'anonymous';
-          document.head.appendChild(alt);
-        }
-      }
-      // Run once DOM is interactive; give primary link a moment to apply.
-      if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', () => setTimeout(ensureFA, 250));
-      } else {
-        setTimeout(ensureFA, 250);
-      }
-    })();
-  </script>
-
-  <!-- Minimal local styles to ensure icons show (does not override your theme) -->
-  <style>
-    .link-icon { display:inline-block; line-height:1; }
-    /* In case any reset hides <i> tags */
-    i.link-icon { font-style: normal; }
-  </style>
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+>
 </head>
+
 <body>
-  <div class="sparkle-container"></div>
+<a id="top"></a>
 
-  <nav class="navbar">
-    <div class="nav-content">
-      <div class="nav-logo"><span class="logo-text">✦ Ray's Portfolio ✦</span></div>
-      <ul class="nav-links">
-        <li><a class="nav-link" href="index.html">Home</a></li>
-        <li><a class="nav-link active" href="commissions.html">Commissions</a></li>
-        <li><a class="nav-link" href="gallery-3d.html">3D Gallery</a></li>
-        <li><a class="nav-link" href="https://hanabihenki.github.io/resources/index.html">Resources</a></li>
-        <li><a class="nav-link" href="links.html">Links</a></li>
-      </ul>
-    </div>
+<header class="top-bar">
+  <nav class="main-nav" aria-label="Primary">
+    <a href="index.html">Home</a>
+    <a href="commissions.html">Commissions</a>
+    <a href="gallery-3d.html">3D Gallery</a>
+    <a href="resources.html">Resources</a>
+    <a href="links.html">Links</a>
   </nav>
+</header>
 
-  <main class="container">
-    <section class="page active" id="links">
-      <div class="page-header">
-        <h1>Links &amp; Socials</h1>
-        <div class="decorative-line"></div>
-      </div>
+<main class="page-wrap">
 
-      <div class="content-box">
-        <div class="gallery-intro">
-          <h2>Find me around the web! </h2>
-          <br/>
+  <div class="site-header">
+    <div class="site-title">
+      <span class="twinkle">✧</span>
+      Links &amp; Socials
+      <span class="twinkle">✧</span>
+    </div>
 
-        <div class="links-grid">
+  </div>
 
-          <!-- Patreon -->
-          <a class="link-button patreon" href="https://www.patreon.com/cw/Hanabihenki" target="_blank" rel="noopener noreferrer">
-            <i class="fa-brands fa-patreon link-icon" aria-hidden="true"></i>
-            <span class="link-text">Patreon</span>
-          </a>
+  <section class="card">
 
+    <div class="badge-grid">
 
-          <!-- Ko-Fi -->
-          <a class="link-button kofi" href="https://ko-fi.com/azurazar" target="_blank" rel="noopener noreferrer">
-            <i class="fa-solid fa-mug-hot link-icon" aria-hidden="true"></i>
-            <span class="link-text">Ko-Fi</span>
-          </a>
-    
+      <a class="badge-link patreon" href="https://www.patreon.com/cw/Hanabihenki" target="_blank" rel="noopener">
+        <i class="fa-brands fa-patreon link-icon" aria-hidden="true"></i>
+        <span>Patreon</span>
+                        <br>
+        <small>hanabihenki</small>
+      </a>
 
+      <a class="badge-link kofi" href="https://ko-fi.com/azurazar" target="_blank" rel="noopener">
+        <i class="fa-solid fa-mug-hot link-icon" aria-hidden="true"></i>
+        <span>Ko-Fi</span>
+                        <br>
+        <small>AzuraZar</small>
+      </a>
 
-          <!-- Bandcamp -->
-          <a class="link-button bandcamp" href="https://azurazar.bandcamp.com/album/seyahs-last-metrapolis" target="_blank" rel="noopener noreferrer">
-            <i class="fa-brands fa-bandcamp link-icon" aria-hidden="true"></i>
-            <span class="link-text">Bandcamp</span>
-          </a>
+      <a class="badge-link bandcamp" href="https://azurazar.bandcamp.com/album/seyahs-last-metrapolis" target="_blank" rel="noopener">
+        <i class="fa-brands fa-bandcamp link-icon" aria-hidden="true"></i>
+        <span>Bandcamp</span>
+                        <br>
+        <small>AzuraZar</small>
+      </a>
 
-          <!-- ToyHouse (no official FA brand) -->
-          <a class="link-button toyhouse" href="https://toyhou.se/Hara_Zara" target="_blank" rel="noopener noreferrer">
-            <i class="fa-solid fa-house link-icon" aria-hidden="true"></i>
-            <span class="link-text">ToyHouse</span>
-          </a>
+      <a class="badge-link toyhouse" href="https://toyhou.se/Hara_Zara" target="_blank" rel="noopener">
+        <i class="fa-solid fa-house link-icon" aria-hidden="true"></i>
+        <span>ToyHouse</span>
+                        <br>
+        <small>Hara_Zara</small>
+      </a>
 
+      <a class="badge-link instagram" href="https://www.instagram.com/hanabihenki/" target="_blank" rel="noopener">
+        <i class="fa-brands fa-instagram link-icon" aria-hidden="true"></i>
+        <span>Instagram</span>
+                        <br>
+        <small>hanabihenki</small>
+      </a>
 
-          <!-- Instagram -->
-          <a class="link-button instagram" href="https://www.instagram.com/hanabihenki/" target="_blank" rel="noopener noreferrer">
-            <i class="fa-brands fa-instagram link-icon" aria-hidden="true"></i>
-            <span class="link-text">Instagram</span>
-          </a>
-          
-          <!-- Instagram -->
-          <a class="link-button tiktok" href="https://www.tiktok.com/@hanabihenki?lang=en" target="_blank" rel="noopener noreferrer">
-            <i class="fa-brands fa-tiktok link-icon" aria-hidden="true"></i>
-            <span class="link-text">Tiktok</span>
-          </a>
-          
+      <a class="badge-link tiktok" href="https://www.tiktok.com/@hanabihenki?lang=en" target="_blank" rel="noopener">
+        <i class="fa-brands fa-tiktok link-icon" aria-hidden="true"></i>
+        <span>TikTok</span>
+                        <br>
+        <small>hanabihenki</small>
+      </a>
 
-          <!-- Twitter / X -->
-          <a class="link-button twitter" href="https://twitter.com/azurazar" target="_blank" rel="noopener noreferrer">
-            <i class="fa-brands fa-twitter link-icon" aria-hidden="true"></i>
-            <span class="link-text">Twitter / X</span>
-          </a>
+      <a class="badge-link twitter" href="https://twitter.com/azurazar" target="_blank" rel="noopener">
+        <i class="fa-brands fa-twitter link-icon" aria-hidden="true"></i>
+        <span>Twitter / X</span>
+                        <br>
+        <small>AzuraZar</small>
+      </a>
 
-          <!-- Bluesky -->
-          <a class="link-button twitter" href="https://bsky.app/profile/hanabihenki.bsky.social" target="_blank" rel="noopener noreferrer">
-            <i class="fa-solid fa-cloud link-icon" aria-hidden="true"></i>
-            <span class="link-text">Bluesky</span>
-          </a>
-          
+      <a class="badge-link bluesky" href="https://bsky.app/profile/hanabihenki.bsky.social" target="_blank" rel="noopener">
+        <i class="fa-solid fa-cloud link-icon" aria-hidden="true"></i>
+        <span>Bluesky</span>
+                        <br>
+        <small>hanabihenki</small>
+      </a>
 
-          <!-- YouTube -->
-          <a class="link-button youtube" href="https://www.youtube.com/channel/UCwuV9Wr2OgpPYiS5xYSFn_A" target="_blank" rel="noopener noreferrer">
-            <i class="fa-brands fa-youtube link-icon" aria-hidden="true"></i>
-            <span class="link-text">YouTube</span>
-          </a>
+      <a class="badge-link youtube" href="https://www.youtube.com/channel/UCwuV9Wr2OgpPYiS5xYSFn_A" target="_blank" rel="noopener">
+        <i class="fa-brands fa-youtube link-icon" aria-hidden="true"></i>
+        <span>YouTube</span>
+                        <br>
+        <small>Azura Zar</small>
+      </a>
 
-          <!-- Newgrounds (no official FA brand) -->
-          <a class="link-button newgrounds" href="https://raydrawsx.newgrounds.com/" target="_blank" rel="noopener noreferrer">
-            <i class="fa-solid fa-face-grin-tongue link-icon" aria-hidden="true"></i>
-            <span class="link-text">Newgrounds</span>
-          </a>
+      <a class="badge-link newgrounds" href="https://raydrawsx.newgrounds.com/" target="_blank" rel="noopener">
+        <i class="fa-solid fa-face-grin-tongue link-icon" aria-hidden="true"></i>
+        <span>Newgrounds</span>
+                        <br>
+        <small>Raydrawsx</small>
+      </a>
 
-          <!-- DeviantArt -->
-          <a class="link-button deviantart" href="https://www.deviantart.com/azurazar" target="_blank" rel="noopener noreferrer">
-            <i class="fa-brands fa-deviantart link-icon" aria-hidden="true"></i>
-            <span class="link-text">DeviantArt</span>
-          </a>
+      <a class="badge-link deviantart" href="https://www.deviantart.com/azurazar" target="_blank" rel="noopener">
+        <i class="fa-brands fa-deviantart link-icon" aria-hidden="true"></i>
+        <span>DeviantArt</span>
+                <br>
+        <small>AzuraZar</small>
+      </a>
 
-          <!-- ArtFight (no official FA brand) -->
-          <a class="link-button artfight" href="https://artfight.net/~Azura-Zar" target="_blank" rel="noopener noreferrer">
-            <i class="fa-solid fa-brush link-icon" aria-hidden="true"></i>
-            <span class="link-text">ArtFight</span>
-          </a>
+      <a class="badge-link artfight" href="https://artfight.net/~Azura-Zar" target="_blank" rel="noopener">
+        <i class="fa-solid fa-brush link-icon" aria-hidden="true"></i>
+        <span>ArtFight</span>
+        <br>
+        <small>Azura-Zar</small>
+      </a>
 
+    </div>
 
+  </section>
 
-        </div>
-      </div>
-    </section>
-  </main>
+</main>
 
-  <script src="script.js"></script>
+<footer class="site-footer">
+  <p>
+    🕐 <span id="sys-clock">--:--:--</span>
+    &nbsp;·&nbsp;
+    👀 <span id="visitor-count">000000</span> visitors
+    &nbsp;·&nbsp;
+  </p>
+
+  <a href="#top" class="back-to-top">↑ back to top</a>
+</footer>
+
+<script src="js/script.js"></script>
 </body>
 </html>

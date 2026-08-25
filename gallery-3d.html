@@ -1,143 +1,83 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Ray's Portfolio — 3D Gallery</title>
-  <link rel="stylesheet" href="style.css"/>
-
-  <!-- Page-local, namespaced styles for the video embed (won't affect other pages) -->
-  <style>
-    /* Responsive 16:9 YouTube embed that fits your aesthetic */
-    #gallery-3d .video-section {
-      margin-top: 2rem;
-    }
-    #gallery-3d .video-section .video-intro {
-      text-align: center;
-      font-weight: 600;
-      color: var(--text-purple);
-      margin-bottom: 1rem;
-    }
-    /* Classic responsive iframe wrapper */
-    #gallery-3d .video-frame {
-      position: relative;
-      width: 100%;
-      /* 16:9 ratio */
-      padding-top: 56.25%;
-      border-radius: 15px;
-      overflow: hidden;
-      border: 4px solid var(--primary-pink);
-      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-      background: #000;
-    }
-    #gallery-3d .video-frame iframe {
-      position: absolute;
-      inset: 0;
-      width: 100%;
-      height: 100%;
-      border: 0;
-    }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ray's Portfolio — 3D Gallery</title>
+<meta name="description" content="Ray's 3D modeling and Blender short film work.">
+<link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-  <div class="sparkle-container"></div>
+<body class="gallery-page">
+<a id="top"></a>
 
-  <nav class="navbar">
-    <div class="nav-content">
-      <div class="nav-logo"><span class="logo-text">✦ Ray's Portfolio ✦</span></div>
-      <ul class="nav-links">
-        <li><a class="nav-link" href="index.html">Home</a></li>
-        <li><a class="nav-link active" href="commissions.html">Commissions</a></li>
-        <li><a class="nav-link" href="gallery-3d.html">3D Gallery</a></li>
-        <li><a class="nav-link" href="https://hanabihenki.github.io/resources/index.html">Resources</a></li>
-        <li><a class="nav-link" href="links.html">Links</a></li>
-      </ul>
-    </div>
+<header class="top-bar">
+  <nav class="main-nav" aria-label="Primary">
+    <a href="index.html">Home</a>
+    <a href="commissions.html">Commissions</a>
+    <a href="gallery-3d.html">3D Gallery</a>
+    <a href="resources.html">Resources</a>
+    <a href="links.html">Links</a>
   </nav>
+</header>
 
-  <main class="container">
-    <section class="page active" id="gallery-3d">
-      <div class="page-header">
-        <h1>3D Gallery</h1>
-        <div class="decorative-line"></div>
-      </div>
-      <!-- YouTube Video Section -->
-      <div class="content-box video-section">
-        <h2 class="gallery-intro">Short Film made in Blender.</h2>
-             <p class="video-intro">This short film was made entirely by me within a month. Content warning. Fake gore and fake corpse.</p>
-        <div class="video-frame" aria-label="YouTube Video: 3D Showcase">
-          <iframe
-            src="https://www.youtube.com/embed/Km6mF7OMRsg"
-            title="3D Showcase Video"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
-          ></iframe>
-        </div>
-      </div><br>
+<main class="page-wrap">
 
-      <!-- 3D Gallery -->
-      <div class="content-box">
-        <h2 class="gallery-intro">My 3D modeling work in Blender - click to enlarge!</h2>
-
-        <div class="gallery-grid">
-          <div class="gallery-item" data-image="https://i.imgur.com/XiRC0x6.png">
-            <img src="https://i.imgur.com/XiRC0x6.png" alt="3D Artwork 1"/>
-            <div class="gallery-overlay"><span>View</span></div>
-          </div>
-
-          <div class="gallery-item" data-image="https://i.imgur.com/VgvvIwR.png">
-            <img src="https://i.imgur.com/VgvvIwR.png" alt="3D Artwork 3"/>
-            <div class="gallery-overlay"><span>View</span></div>
-          </div>
-
-          <div class="gallery-item" data-image="https://i.imgur.com/3G1Hpao.gif">
-            <img src="https://i.imgur.com/3G1Hpao.gif" alt="3D Artwork 4"/>
-            <div class="gallery-overlay"><span>View</span></div>
-          </div>
-
-          <div class="gallery-item" data-image="https://i.imgur.com/hJ90bgy.gif">
-            <img src="https://i.imgur.com/hJ90bgy.gif" alt="3D Artwork 5"/>
-            <div class="gallery-overlay"><span>View</span></div>
-          </div>
-
-          <div class="gallery-item" data-image="https://i.imgur.com/IPe4bcM.gif">
-            <img src="https://i.imgur.com/IPe4bcM.gif" alt="3D Artwork 6"/>
-            <div class="gallery-overlay"><span>View</span></div>
-          </div>
-
-          <div class="gallery-item" data-image="https://i.imgur.com/J0c5aDz.gif">
-            <img src="https://i.imgur.com/J0c5aDz.gif" alt="3D Artwork 7"/>
-            <div class="gallery-overlay"><span>View</span></div>
-          </div>
-
-          <div class="gallery-item" data-image="https://i.imgur.com/z5vV8IO.gif">
-            <img src="https://i.imgur.com/z5vV8IO.gif" alt="3D Artwork 8"/>
-            <div class="gallery-overlay"><span>View</span></div>
-          </div>
-
-          <div class="gallery-item" data-image="https://i.imgur.com/U0MAues.png">
-            <img src="https://i.imgur.com/U0MAues.png" alt="3D Artwork 9"/>
-            <div class="gallery-overlay"><span>View</span></div>
-          </div>
-        </div>
-      </div>
-
-
-    </section>
-  </main>
-
-  <!-- Lightbox -->
-  <div class="lightbox" id="lightbox">
-    <div class="lightbox-content">
-      <span class="lightbox-close">×</span>
-      <img id="lightbox-image" alt="Enlarged image" src=""/>
-      <div class="lightbox-nav">
-        <button class="lightbox-prev">← Prev</button>
-        <button class="lightbox-next">Next →</button>
-      </div>
-    </div>
+  <div class="site-header">
+    <div class="site-title"><span class="twinkle">✧</span> 3D Gallery <span class="twinkle">✧</span></div>
   </div>
 
-  <script src="script.js"></script>
+  <section class="card">
+    <h2 class="mt-0">Short Film made in Blender</h2>
+    <p>This short film was made entirely by me within a month.</p>
+    <p class="cw-note">⚠ Content warning: fake gore and a fake corpse.</p>
+    <div class="video-frame">
+      <iframe src="https://www.youtube.com/embed/Km6mF7OMRsg" title="Blender short film" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+    </div>
+  </section>
+
+  <section class="card">
+        <div class="gallery-section">
+    <h2 class="mt-0">3D Animations</h2>
+    <p>All 3D models made in Blender.</p>
+    <div id="gallery-3d" class="gallery-grid"></div>
+</div>
+    <div class="gallery-section">
+    <h2 class="mt-0">3D Models</h2>
+    <p>All 3D models made in Blender.</p>
+    <div id="gallery-3dm" class="gallery-grid"></div>
+</div>
+
+  </section>
+
+
+</main>
+
+<footer class="site-footer">
+  <p>🕐 <span id="sys-clock">--:--:--</span> &nbsp;·&nbsp; 👀 <span id="visitor-count">000000</span> visitors &nbsp;·&nbsp;</p>
+  <a href="#top" class="back-to-top">↑ back to top</a>
+</footer>
+
+<script src="js/script.js"></script>
+<script>
+  RaySite.renderGallery('gallery-3d', [
+    { file:"assets/3D/fdOlLvh39VAFRG4fDzVfEErOA7e3qlv6tHGBLudX5HGbnaF7Ycyxeeiyp6jU.gif", alt:"3D Animation 1" },
+    { file:"assets/3D/dZ0lvHEM4tRSBOkgyqBuxNIMbdFsfzHR1kjduXhB7TZBxut9Mw1EeFxzOG9ib.gif", alt:"3D Animation 2" },
+    { file:"assets/3D/dEm3qW3KGtRpbJ73qyXypIJrbhXIHiKbXtBQ4BxL1OIBaOiQXoM4do8Ud7aO1.gif", alt:"3D Animation 3" },
+    { file:"assets/3D/9V6zdF4ZAtvKpn0Mob9t3NnAzTXSPV7r4Nt08WBs6lC9i7IWn74Fxo3yeRNa.gif", alt:"3D Animation 4" },
+
+  ]);
+
+
+    RaySite.renderGallery('gallery-3dm', [
+    { file:"assets/3D/RHymSAqj4tv9dUTRscVrLpRm49ggyQW7gb1Jp2dzHormWppk49NSy3AOjo5K.gif", alt:"3D artwork 1" },
+    { file:"assets/3D/dvnRAKE2q8y3wjIvNKb31ZFA6jgrNItj2o6bHWZEGdZMl20cyHRlN7mZ0nI4h.gif", alt:"3D artwork 2" },
+        { file:"assets/3D/jVJYgmwcmXpkPC7bs3WnbrcaQEzL8psQd6URHqlgByaKyDDLyohyai25KwJS.png", alt:"3D artwork 3" },
+    { file:"assets/3D/dSUqXxrM59cr2zUZiPg2QCfWikvEXfEAMUJmhmolQt61qYdLwpKuFklapB1Xt.png", alt:"3D artwork 4" },
+    { file:"assets/3D/dmrgB88WYK8DDbPtDRVTY4YeDizn5eZR6eRia7e37oK2cqpQGiU03YjQjuhpX.png", alt:"3D artwork 5" },
+    { file:"assets/3D/D10Eh8eau0cBI26i0v0B7eDns0HZ7fjUd5Wque6V9PIq6z2oq5JpkOVUHT2F.png", alt:"3D artwork 6" },
+    { file:"assets/3D/77FoLsHZxx9Ksh40tDTH5dYG7tsK9xdX8HaEcpcQNQVrfvw16wtJSp9fddLO.png", alt:"3D artwork 7" },
+    { file:"assets/3D/3g96YmZPY7rLXGV1RlpqmPF6onc2dOFQx5szXGNT3OycZrvH6Dl2AWylIx2l.jpg", alt:"3D artwork 8" }
+  ]);
+</script>
 </body>
 </html>
